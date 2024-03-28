@@ -59,7 +59,7 @@ def plot_data(y_test,y_pred):
     ax1.xaxis.set_tick_params(labelsize=28)
     ax1.yaxis.set_tick_params(labelsize=28)
     plt.tight_layout()
-    # plt.savefig('1st_round_it.tiff',dpi=300)
+    # plt.savefig('2nd_round_it.tiff',dpi=300)
     plt.show()
 
 def main():
