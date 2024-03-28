@@ -32,7 +32,7 @@ def data_handling(df_trainning_set,df_testing_set):
 
 ### Show prediction of each pose in SMD simulation
 def result_each_pose(y_test,y_pred):
-    #number of replicacs
+    #number of replicas
     num=3
     col=round(len(y_pred)/num)
     A1=np.reshape(y_pred,(col,num))
