@@ -1,0 +1,22 @@
+; 					Energy Minimization
+;cpp                 =  /lib/cpp
+define              =  -DFLEXIBLE
+constraints         =  none
+integrator  	    =  steep		; Algorithm (steep = steepest descent minimization)
+nsteps              =  10000		; Maximum number of (minimization) steps to perform
+;
+;       Energy minimizing stuff
+emtol               =  200		; Stop minimization when the maximum force < 200.0 kJ/mol/nm
+emstep              =  0.01		; Minimization step size
+
+; Parameters describing how to find the neighbors of each atom and how to calculate the interactions
+
+cutoff-scheme       =  Verlet		; Buffered neighbor searching
+nstcomm             =  10
+ns_type             =  grid
+rlist               =  1.4
+rcoulomb            =  1.4
+rvdw                =  1.4
+Tcoupl              =  no
+Pcoupl              =  no
+gen_vel             =  no
